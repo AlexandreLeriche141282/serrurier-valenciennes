@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'RedRose';
+    src: url('./assets/fonts/RedRose-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.pre-footer{
+    background-color: rgb(215,0,17);
+    border-radius: 50px;
+    margin: 25px;
+    @media (min-width: 992px) { // ou 1024px selon vos besoins
+        max-width: 1080px;
+        margin: 25px auto;
+        display: flex;
+        justify-content: center;
+      }
+    
+    font-family:RedRose;
+.text-section{
+    p{
+        color: white;
+        font-size: 26px;
+        text-align: center;
+        padding: 0 10px;
+        
+    } 
+}
+
+img{
+    width: 350px;
+    margin-top: -30px;
+}
+.phone-section {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    
+        .blink {
+            animation: clignoter 1.2s linear infinite;
+            color: yellow;
+            font-size: 20px;
+            font-weight: bold;
+    
+            a {
+                text-decoration: none;
+                color: yellow;
+                font-size: 30px;
+                img{
+                    width: 30px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .text-section2{
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 15px 0;
+        font-size: 25px;
+    }
+    
+// Animation clignotement
+@keyframes clignoter {
+    50% {
+        opacity: 0;
+    }
+}
+}

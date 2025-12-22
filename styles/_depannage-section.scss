@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Lato'; // Nom de la police que tu utiliseras dans font-family
+    src: url('../assets/fonts/Lato-Regular.ttf'); // Chemin vers le fichier de police
+  }
+  
+  .depannage-section {
+    max-width: 1380px;
+    margin: 20px auto;
+    font-family: Lato;
+    display: flex; // Affichage en ligne des deux colonnes
+    align-items: center; // Centrage vertical
+    justify-content: space-between; // Espacement entre les colonnes
+    padding: 20px;
+    gap: 20px;
+
+    .depannage-content {
+      display: flex;
+      flex-direction: column;
+    
+      @media (min-width: 768px) {
+        flex: 1;
+      }
+    }
+    
+  
+    .depannage-image {
+      img {
+        max-width: 100%; // L'image s'adapte au conteneur
+        height: auto; // Maintient les proportions
+      }
+    }
+  
+    .depannage-texte {
+      flex: 1; // La div texte occupe tout l'espace restant
+  
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333; // Couleur du texte (gris foncé)
+        color: rgb(8,61,96); // Couleur personnalisée
+      }
+    }
+  
+    // Responsive Design pour les petits écrans
+    @media (max-width: 768px) {
+      flex-direction: column; // Les divs s'empilent verticalement
+      text-align: center;
+  
+      .depannage-image img {
+        max-width: 100%; // Réduction de la taille de l'image sur mobile
+        margin: auto;
+      }
+  
+      .depannage-texte {
+        margin-top: 20px; // Espacement entre l'image et le texte
+      }
+    }
+  
+    .depannage-logo {
+      display: flex; // Alignement horizontal du logo et du texte
+      align-items: center; // Centrage vertical
+      gap: 15px; // Espacement entre le logo et le texte
+      margin-top: 20px;
+  
+      img {
+        width: 150px; // Taille du logo (ajustez selon vos besoins)
+        height: auto;
+       
+      }
+  
+      p {
+        font-size: 20px;
+        color: #d70017;
+        font-weight: 600; // Mettre le texte en valeur
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+      
+      @media (max-width: 768px) {
+        
+  
+        img {
+          margin-bottom: 10px; // Espacement entre le logo et le texte sur mobile
+        }
+        
+        p {
+          font-size: 16px; // Augmente légèrement la taille du texte sur mobile
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .depannage-section {
+    .depannage-texte {
+      margin-bottom: 20px;
+    }
+
+    .depannage-logo {
+      // Force le logo à s’afficher sous le texte
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+}

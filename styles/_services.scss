@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Lato'; // Nom de la police que tu utiliseras dans font-family
+    src: url('../assets/fonts/Lato-Regular.ttf'); // Chemin vers le fichier de police
+    font-weight: normal; // Poids de la police (normal ou bold)
+    font-style: normal; // Style de la police (normal ou italic)
+  }
+@font-face {
+    font-family: 'RedRose'; // Nom de la police que tu utiliseras dans font-family
+    src: url('../assets/fonts/RedRose-VariableFont_wght.ttf'); // Chemin vers le fichier de police
+    font-weight: normal; // Poids de la police (normal ou bold)
+    font-style: normal; // Style de la police (normal ou italic)
+  }
+
+.services {
+    max-width: 1380px;
+    margin: 0 auto;
+    font-family: RedRose;
+    font-weight: 100;
+    line-height: 20px;
+    padding: 40px 20px 20px 20px; // Espacement interne
+    text-align: center; // Centrer le contenu
+  
+    .services-container {
+      max-width: 1000px; // Largeur maximale du conteneur
+      margin: 0 auto; // Centrer horizontalement
+  
+      .services-text {
+        font-size: clamp(24px, 2vw, 20px); // Taille responsive du texte
+        color: rgb(8,71,104); // Couleur du texte
+        margin-bottom: 20px; // Espacement sous le texte
+        // font-weight: bold;
+        line-height: 28px;
+        font-family:Lato;
+        span{
+          font-weight: bold;
+        }
+      }
+  
+      .btn {
+        display: flex; // Pour aligner l'icône et le texte horizontalement
+        align-items: center;
+        justify-content:space-evenly;
+        background-color: #254295; // Couleur de fond des boutons (bleu)
+        color: #fff; // Couleur du texte des boutons
+        text-decoration: none; // Supprime le soulignement des liens
+        font-size: clamp(16px, 2vw, 18px); // Taille responsive du texte des boutons
+        padding: 15px 20px; // Espacement interne des boutons
+        border-radius: 35px; // Coins arrondis des boutons
+        margin-bottom: 20px; // Espacement entre les boutons
+        transition: background-color 0.3s ease; // Animation au survol
+  
+        &:hover {
+          background-color: #1e3a7d; // Couleur au survol (plus foncée)
+        }
+  
+        .btn-icon {
+          width: 39px; // Taille de l'icône
+          height: auto;
+        //   margin-right: 15px; // Espace entre l'icône et le texte
+        }
+      }
+  
+      .btn-call {
+        background-color: rgb(215, 0, 17); /* Couleur de base */
+        font-size: clamp(30px, 2vw, 30px);
+        width: 300px;
+        margin: 20px auto;
+        color: white; /* Texte lisible */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        animation: lightenPulse 1.2s infinite ease-in-out; /* Animation infinie */
+      }
+      
+      /* Définition de l'animation */
+      @keyframes lightenPulse {
+        0% {
+          filter: brightness(1); /* Couleur normale */
+        }
+        50% {
+          filter: brightness(1.5); /* Couleur légèrement plus claire */
+        }
+        100% {
+          filter: brightness(1); /* Retour à la couleur normale */
+        }
+      }
+      
+  
+      .btn-urgence {
+        background-color: rgb(215,0,17); // Rouge pour le bouton d'urgence
+        font-size: clamp(22px, 2vw, 20px);
+        text-align: center;
+        border-radius: 50px;
+        height: 65px;
+        max-width: 350px;
+        margin: 0 auto;
+        &:hover {
+          background-color: #c82333; // Rouge plus foncé au survol
+        }
+        .btn-icon-urgency{
+            width: 80px;
+            
+        }
+      }
+    }
+    .logo-rncp{
+      
+        width: 200px;
+        padding-top: 50px;
+      
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .services-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      text-align: center;
+  
+      .services-text {
+        flex: 1;
+        margin-bottom: 0;
+        order: 2;
+      }
+  
+      .btn-call {
+        order: 1;
+        margin: 0;
+        flex-shrink: 0;
+      }
+  
+      .btn-urgence {
+        order: 3;
+        margin: 0;
+        flex-shrink: 0;
+      }
+    }
+  }
+  
+  

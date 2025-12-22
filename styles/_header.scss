@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'RedRose'; // Nom de la police que tu utiliseras dans font-family
+  src: url('./assets/fonts/RedRose-VariableFont_wght.ttf') format('truetype'); // Chemin vers le fichier de police
+  font-weight: normal; // Poids de la police (normal ou bold)
+  font-style: normal; // Style de la police (normal ou italic)
+}
+@font-face {
+  font-family: 'Lato'; // Nom de la police que tu utiliseras dans font-family
+  src: url('./assets/fonts/Lato-Regular.ttf') format('truetype'); // Chemin vers le fichier de police
+  font-weight: normal; // Poids de la police (normal ou bold)
+  font-style: normal; // Style de la police (normal ou italic)
+}
+@font-face {
+  font-family: 'RedRoseBold'; // Nom de la police que tu utiliseras dans font-family
+  src: url('../assets/fonts/RedRose-VariableFont_wght.ttf') format('truetype'); // Chemin vers le fichier de police
+  font-weight: normal; // Poids de la police (normal ou bold)
+  font-style: normal; // Style de la police (normal ou italic)
+}
+
+.header {
+  position: relative;
+  height: 20rem;
+  display: flex;
+  max-width: 1380px;
+  margin: 0 auto;
+  border-radius: 0 0 40px 40px;
+  /* Version ordinateur */
+  @media (min-width: 992px) { // ou 1024px selon vos besoins
+    height: 40rem; // Hauteur ajustée pour les écrans larges
+  }
+
+  .header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; // Place les éléments aux extrémités gauche et droite
+    align-items: flex-start; // Aligne les éléments en haut du conteneur
+    position: relative; // Nécessaire pour que les enfants absolus soient positionnés par rapport à ce conteneur
+
+    
+    // Conteneur du logo et du titre
+    .logo-container {
+      display: flex;
+      // flex-direction: column; // Empile le logo et le titre horizontalement
+      align-items: center; // Aligne à gauche
+      margin-left: 20px; // Espace à gauche
+      margin-top: 10px; // Ajoute un espace en haut pour éloigner du bord supérieur
+      
+      .logo {
+        width: 80px; // Taille du logo
+        height: auto;
+      }
+      
+      .site-title {
+        position:absolute;
+        font-size: clamp(22px, 4vw, 80px); // Min: 18px, Idéal: 4% de la largeur de l'écran, Max: 42px
+        color: #254295;
+        margin-top: 140px;
+        margin-left: 5px;
+        font-family: Lato;
+        span{
+          color: red;
+        }
+        @media (min-width: 992px) { // ou 1024px selon vos besoins
+          margin-top: 300px;
+          margin-left: 45px;
+        }
+      }
+    }
+
+    // Image flottante sur la droite
+    .floating-image {
+      position: absolute; // Permet de positionner l'image indépendamment des autres éléments
+      bottom: 0; // Aligne l'image en bas du header
+      // right: 0rem; // Espace à droite
+      left: 10rem;
+      width: auto; // L'image occupe sa taille naturelle (pas toute la largeur)
+      max-width: 550px; // Limite la largeur maximale de l'image
+      height: 19rem; // Ajuste automatiquement la hauteur pour préserver les proportions
+
+      @media (min-width: 992px) { // ou 1024px selon vos besoins
+        height: 38rem; // Hauteur ajustée pour les écrans larges
+        left: 52rem;
+      }
+    }
+
+    // Styles pour le h2 (sous-titre)
+    .header-subtitle {
+      position: absolute; // Positionne le h2 indépendamment des autres éléments
+      bottom: 2rem; // Aligne le h2 en bas du header avec un espace de 20px depuis le bord inférieur
+      left: 1rem; // Positionne le h2 à gauche avec un espace de 20px depuis le bord gauche
+      font-size: clamp(27px, 3vw, 48px); // Min : petite taille, Idéal : responsive, Max : grande taille
+      color: #ffffff; // Couleur blanche pour contraster avec l'arrière-plan
+      font-weight:700; // Rend le texte plus visible et impactant
+      // font-family: Lato;
+      letter-spacing: 2px;
+      line-height: 30px;
+      font-family: RedRose;
+      @media (min-width: 992px) { // ou 1024px selon vos besoins
+        bottom: 8rem; // Aligne le h2 en bas du header avec un espace de 20px depuis le bord inférieur
+      left: 4rem;
+      line-height: 45px;
+      font-weight: 900;
+      }
+    }
+  }
+}

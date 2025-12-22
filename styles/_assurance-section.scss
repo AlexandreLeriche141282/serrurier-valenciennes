@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'RedRose'; // Nom de la police que tu utiliseras dans font-family
+    src: url('../assets/fonts/RedRose-Bold.ttf'); // Chemin vers le fichier de police
+  }
+  @font-face {
+    font-family: 'Lato'; // Nom de la police que tu utiliseras dans font-family
+    src: url('./assets/fonts/Lato-Regular.ttf') format('truetype'); // Chemin vers le fichier de police
+    font-weight: normal; // Poids de la police (normal ou bold)
+    font-style: normal; // Style de la police (normal ou italic)
+  }
+
+.assurance-section {
+    padding: 20px;
+    text-align: center;
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+  
+    h2 {
+      font-size: clamp(24px, 4vw, 42px); // Min: 18px, Idéal: 4% de la largeur de l'écran, Max: 42px
+      margin-bottom: 15px;
+      color: #d70017; // Couleur rouge pour le titre
+      font-family: RedRose;
+    }
+  
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 20px; // Espacement avec les logos
+      color: #254295;
+      font-style: italic;
+      font-weight: 700;
+      font-family: Lato;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+  
+    .assurance-logos {
+      display: flex; // Aligne les logos horizontalement
+      justify-content: space-evenly; // Centre les logos
+      gap: 20px; // Espacement entre chaque logo
+      flex-wrap: wrap; // Permet aux logos de passer à la ligne si l'écran est trop petit
+      background: white;
+      border-radius: 10px;
+      @media (min-width: 768px) {
+        border-radius: 0;
+        padding: 10px;
+      }
+  
+      img {
+        width: 60px; // Taille des logos
+        height: auto; // Maintient les proportions
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .assurance-logos {
+        gap: 10px; // Réduit l'espacement entre les logos sur mobile
+        img {
+          width: 90px; // Réduction de la taille des logos sur mobile
+        }
+      }
+      
+      h2 {
+        font-size: 34px; // Taille réduite du titre sur mobile
+      }
+  
+      p {
+        font-size: 14px; // Taille réduite du paragraphe sur mobile
+      }
+    }
+  }
+  

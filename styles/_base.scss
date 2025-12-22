@@ -1,0 +1,35 @@
+// _base.scss
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(226,226,226);
+
+    // Styles pour le bouton de retour vers le haut
+    #backToTopBtn {
+        display: none; /* Caché par défaut */
+        position: fixed; /* Position fixe */
+        bottom: 30px; /* En bas de la page */
+        right: 30px; /* À droite */
+        z-index: 100; /* Au-dessus des autres éléments */
+        background-color: #d70017; /* Couleur du bouton */
+        color: white; /* Couleur du texte */
+        border: none; /* Pas de bordure */
+        outline: none; /* Pas de contour */
+        cursor: pointer; /* Curseur pointer au survol */
+        padding: 15px; /* Espacement interne */
+        border-radius: 50%; /* Bouton rond */
+        // font-size: 20px; /* Taille du texte */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère */
+        transition: opacity 0.3s ease-in-out; /* Transition douce pour l'apparition/disparition */
+    }
+    
+    #backToTopBtn:hover {
+        background-color: #0056b3; /* Couleur au survol */
+    }
+    
+}

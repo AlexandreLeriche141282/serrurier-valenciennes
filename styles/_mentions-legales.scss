@@ -1,0 +1,73 @@
+.legal-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .legal-header {
+    text-align: center;
+    margin-bottom: 20px;
+    h1 {
+      color: #007BFF;
+    }
+  }
+  
+  .legal-main {
+    .legal-section {
+      margin-bottom: 30px;
+      h2 {
+        color: #007BFF;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  
+    .back-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken(#007BFF, 10%);
+      }
+    }
+  }
+  
+  .legal-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    .site-realise-par {
+        display: flex;
+        align-items: center; /* Centre verticalement */
+        justify-content: center; /* Centre horizontalement */
+        // margin-top: 10px; /* Ajustez l'espacement selon vos besoins */
+        p {
+            margin-right: 5px; /* Espacement entre le texte et le logo */
+            font-size: 0.8em; /* Taille de la police */
+            color: #777; /* Couleur du texte */
+        }
+        a {
+            img {
+                height: 40px; /* Hauteur du logo */
+                width: auto; /* Largeur automatique pour conserver les proportions */
+                display: block; /* Supprime l'espacement supplémentaire autour de l'image */
+            }
+        }
+    }
+  }
+  
