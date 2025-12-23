@@ -15,7 +15,7 @@ body #backToTopBtn {
   bottom: 30px; /* En bas de la page */
   right: 30px; /* À droite */
   z-index: 100; /* Au-dessus des autres éléments */
-  background-color: #d70017; /* Couleur du bouton */
+  background-color: rgb(34, 139, 34); /* Couleur du bouton */
   color: white; /* Couleur du texte */
   border: none; /* Pas de bordure */
   outline: none; /* Pas de contour */
@@ -80,11 +80,12 @@ body #backToTopBtn:hover {
 }
 .header .header-content .logo-container .site-title {
   position: absolute;
-  font-size: clamp(22px, 4vw, 80px);
-  color: #254295;
-  margin-top: 140px;
+  font-size: clamp(32px, 4vw, 80px);
+  color: white;
+  margin-top: 150px;
   margin-left: 5px;
   font-family: Lato;
+  letter-spacing: 1px;
 }
 .header .header-content .logo-container .site-title span {
   color: red;
@@ -98,7 +99,7 @@ body #backToTopBtn:hover {
 .header .header-content .floating-image {
   position: absolute;
   bottom: 0;
-  left: 10rem;
+  left: 12rem;
   width: auto;
   max-width: 550px;
   height: 19rem;
@@ -186,7 +187,7 @@ body #backToTopBtn:hover {
   height: auto;
 }
 .services .services-container .btn-call {
-  background-color: rgb(215, 0, 17); /* Couleur de base */
+  background-color: rgb(34, 139, 34); /* Couleur de base */
   font-size: clamp(30px, 2vw, 30px);
   width: 300px;
   margin: 20px auto;
@@ -208,7 +209,7 @@ body #backToTopBtn:hover {
   }
 }
 .services .services-container .btn-urgence {
-  background-color: rgb(215, 0, 17);
+  background-color: rgb(34, 139, 34);
   font-size: clamp(22px, 2vw, 20px);
   text-align: center;
   border-radius: 50px;
@@ -217,7 +218,7 @@ body #backToTopBtn:hover {
   margin: 0 auto;
 }
 .services .services-container .btn-urgence:hover {
-  background-color: #c82333;
+  background-color: rgb(34, 139, 34);
 }
 .services .services-container .btn-urgence .btn-icon-urgency {
   width: 80px;
@@ -312,7 +313,7 @@ body #backToTopBtn:hover {
 }
 .depannage-section .depannage-logo p {
   font-size: 20px;
-  color: #d70017;
+  color: rgb(34, 139, 34);
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -357,7 +358,7 @@ body #backToTopBtn:hover {
 .assurance-section h2 {
   font-size: clamp(24px, 4vw, 42px);
   margin-bottom: 15px;
-  color: #d70017;
+  color: rgb(34, 139, 34);
   font-family: RedRose;
 }
 .assurance-section p {
@@ -423,7 +424,7 @@ body #backToTopBtn:hover {
 .services-section h2 {
   font-size: clamp(34px, 4vw, 42px);
   margin-bottom: 15px;
-  color: #d70017;
+  color: rgb(34, 139, 34);
   font-family: RedRose;
 }
 .services-section p {
@@ -458,7 +459,7 @@ body #backToTopBtn:hover {
 .services-section .services-cards .card h3 {
   font-size: 20px;
   margin: 15px;
-  color: #d70017;
+  color: rgb(34, 139, 34);
   font-family: RedRose;
 }
 .services-section .services-cards .card p {
@@ -508,11 +509,11 @@ body #backToTopBtn:hover {
 .testimonials-section .testimonials-content h2 {
   font-family: "Lato", sans-serif;
   font-size: clamp(32px, 4vw, 42px);
-  color: #d70017;
+  color: rgb(34, 139, 34);
   margin-bottom: 20px;
 }
 .testimonials-section .testimonials-content h2 span {
-  color: red;
+  color: rgb(34, 139, 34);
 }
 .testimonials-section .testimonials-content p {
   font-family: "RedRose", sans-serif;
@@ -538,7 +539,7 @@ body #backToTopBtn:hover {
   font-style: normal;
 }
 .pre-footer {
-  background-color: rgb(215, 0, 17);
+  background-color: rgb(34, 139, 34);
   border-radius: 50px;
   margin: 25px;
   font-family: RedRose;
@@ -638,7 +639,7 @@ body #backToTopBtn:hover {
   color: #254295;
 }
 .footer .footer-company-name p span {
-  color: red;
+  color: rgb(34, 139, 34);
 }
 .footer .footer-navigation,
 .footer .footer-localisation,
@@ -746,7 +747,7 @@ body #backToTopBtn:hover {
 .marques-section h2 {
   font-size: clamp(24px, 4vw, 42px);
   margin-bottom: 15px;
-  color: #d70017;
+  color: rgb(34, 139, 34);
   font-family: RedRose;
 }
 .marques-section p {
@@ -870,7 +871,7 @@ body #backToTopBtn:hover {
 }
 #faq h2 {
   font-size: clamp(24px, 4vw, 42px);
-  color: #d70017;
+  color: rgb(34, 139, 34);
   font-family: RedRose;
   text-align: center;
   display: flex;

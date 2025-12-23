@@ -52,11 +52,12 @@
       
       .site-title {
         position:absolute;
-        font-size: clamp(22px, 4vw, 80px); // Min: 18px, Idéal: 4% de la largeur de l'écran, Max: 42px
-        color: #254295;
-        margin-top: 140px;
+        font-size: clamp(32px, 4vw, 80px); // Min: 18px, Idéal: 4% de la largeur de l'écran, Max: 42px
+        color: white;
+        margin-top: 150px;
         margin-left: 5px;
         font-family: Lato;
+        letter-spacing: 1px;
         span{
           color: red;
         }
@@ -72,7 +73,7 @@
       position: absolute; // Permet de positionner l'image indépendamment des autres éléments
       bottom: 0; // Aligne l'image en bas du header
       // right: 0rem; // Espace à droite
-      left: 10rem;
+      left: 12rem;
       width: auto; // L'image occupe sa taille naturelle (pas toute la largeur)
       max-width: 550px; // Limite la largeur maximale de l'image
       height: 19rem; // Ajuste automatiquement la hauteur pour préserver les proportions

@@ -24,11 +24,11 @@
       h2 {
         font-family: 'Lato', sans-serif;
         font-size: clamp(32px, 4vw, 42px);
-        color: #d70017; // Couleur rouge pour le titre
+        color: rgb(34, 139, 34); // Couleur rouge pour le titre
         margin-bottom: 20px;
   
         span {
-          color: red; // Accent sur certains mots si nécessaire
+          color: rgb(34, 139, 34); // Accent sur certains mots si nécessaire
         }
       }
   
