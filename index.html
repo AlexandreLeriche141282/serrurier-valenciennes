@@ -37,95 +37,73 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Locksmith",
-  "@id": "https://serrurier-valenciennes-depannage.fr/#business",
-  "name": "Serrurier Valenciennes Depannage",
-  "description": "Serrurier à Valenciennes — dépannage d'urgence 24h/24 pour porte bloquée, remplacement de serrure et cylindre. Intervention rapide sur Valenciennes et environs (Maubeuge, Saint-Amand, Le Quesnoy, Denain, Somain, Quiévrechain, Cambrai).",
-  "url": "https://serrurier-valenciennes-depannage.fr",
-  "telephone": "+33 7 59 59 44 52",
-  "image": "https://serrurier-valenciennes-depannage.fr/assets/img/serrurerie-lille.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "74 Rue Baudouin l'Edifieur",
-    "postalCode": "59300",
-    "addressLocality": "Valenciennes",
-    "addressCountry": "FR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 50.3514066,
-    "longitude": 3.5284595
-  },
-  "openingHours": [
-    "Mo-Su 00:00-23:59"
-  ],
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "City",
-      "name": "Valenciennes"
+      "@type": "LocalBusiness",
+      "@id": "https://serrurier-valenciennes-depannage.fr/#business",
+      "name": "Serrurier Valenciennes Depannage",
+      "description": "Serrurier à Valenciennes — dépannage d'urgence 24h/24 pour porte bloquée, remplacement de serrure et cylindre. Intervention rapide sur Valenciennes et environs.",
+      "url": "https://serrurier-valenciennes-depannage.fr/",
+      "telephone": "+33759594452",
+      "image": "https://serrurier-valenciennes-depannage.fr/assets/img/serrurerie-lille.jpg",
+      "priceRange": "€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "74 Rue Baudouin l'Edifieur",
+        "postalCode": "59300",
+        "addressLocality": "Valenciennes",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.3514066,
+        "longitude": 3.5284595
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "areaServed": ["Valenciennes","Maubeuge","Saint-Amand","Le Quesnoy","Denain","Somain","Quiévrechain","Cambrai"],
+      "serviceOffered": [
+        {"@type":"Service","name":"Dépannage porte bloquée"},
+        {"@type":"Service","name":"Remplacement de serrure"},
+        {"@type":"Service","name":"Ouverture de porte"},
+        {"@type":"Service","name":"Remplacement de cylindre"}
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+33759594452",
+        "contactType": "customer service",
+        "availableLanguage": "fr"
+      }
     },
     {
-      "@type": "City",
-      "name": "Maubeuge"
-    },
-    {
-      "@type": "City",
-      "name": "Saint-Amand"
-    },
-    {
-      "@type": "City",
-      "name": "Le Quesnoy"
-    },
-    {
-      "@type": "City",
-      "name": "Denain"
-    },
-    {
-      "@type": "City",
-      "name": "Somain"
-    },
-    {
-      "@type": "City",
-      "name": "Quiévrechain"
-    },
-    {
-      "@type": "City",
-      "name": "Cambrai"
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte un dépannage d'urgence ?",
+          "acceptedAnswer": {"@type":"Answer","text":"Le tarif varie selon l'intervention : à partir de 39€ pour une ouverture de porte simple. Devis gratuit par téléphone."}
+        },
+        {
+          "@type": "Question",
+          "name": "Intervenez-vous la nuit et le week-end ?",
+          "acceptedAnswer": {"@type":"Answer","text":"Oui, nous sommes disponibles 24h/24 et 7j/7 pour les dépannages d'urgence, même les jours fériés."}
+        },
+        {
+          "@type": "Question",
+          "name": "Proposez-vous un devis gratuit ?",
+          "acceptedAnswer": {"@type":"Answer","text":"Oui, nous établissons un devis gratuit avant toute intervention."}
+        }
+      ]
     }
-  ],
-  "serviceOffered": [
-    {
-      "@type": "Service",
-      "name": "Dépannage porte bloquée",
-      "description": "Intervention 24h/24 pour ouverture de porte bloquée ; ouverture sans casse quand possible."
-    },
-    {
-      "@type": "Service",
-      "name": "Remplacement de serrure",
-      "description": "Remplacement et installation de serrures, y compris serrures multipoints."
-    },
-    {
-      "@type": "Service",
-      "name": "Ouverture de porte",
-      "description": "Ouverture de portes fermées ou claquées avec méthodes non destructives lorsque possible."
-    },
-    {
-      "@type": "Service",
-      "name": "Remplacement de cylindre",
-      "description": "Remplacement de cylindres et mise en place de solutions de sécurité adaptées."
-    }
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+33 7 59 59 44 52",
-    "contactType": "customer service",
-    "areaServed": "FR",
-    "availableLanguage": "fr"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://serrurier-valenciennes-depannage.fr"
-  }
+  ]
 }
 </script>
   <!-- Google tag (gtag.js) -->
@@ -193,18 +171,20 @@
     </div>
 
     <div class="depannage-content">
-      <div class="depannage-texte">
-      <p>
-        Vous êtes bloqué devant votre porte ? Vous avez perdu vos clés ou votre serrure est endommagée ? Notre service de dépannage d'urgence en serrurerie est <strong>à votre disposition 24h/24 et 7j/7 à Valenciennes et ses alentours.</strong>  Nous intervenons rapidement, avec un délai moyen de seulement <strong>20 minutes</strong>, pour vous aider à retrouver l'accès à votre domicile ou à sécuriser vos biens.
-      </p>
-      <p>
-        Nos serruriers professionnels sont équipés pour gérer tous types de situations, qu'il s'agisse d'une porte claquée, d'une clé cassée dans la serrure ou d'une effraction. <br> <strong>Faites confiance à notre expertise pour un service rapide, fiable et abordable, où que vous soyez dans la région seclinoise.
-    </div></strong>
-    <div class="depannage-logo">
-      <img src="./assets/img/serrurerie-garantie-2ans.webp" alt="services de serrurerie garantie 2 ans à Seclin, Wattignies, Templemars, Houplin-Ancoisne" />
-      <p>Toutes nos <br>interventions sont <br>garanties 2 ans</p>
-    </div>
-    </div>
+  <div class="depannage-texte">
+    <p>
+      Vous êtes bloqué devant votre porte ? Vous avez perdu vos clés ou votre serrure est endommagée ? Notre service de dépannage d'urgence en serrurerie est <strong>à votre disposition 24h/24 et 7j/7 à Valenciennes et ses alentours.</strong> Nous intervenons rapidement, avec un délai moyen de seulement <strong>20 minutes</strong>, pour vous aider à retrouver l'accès à votre domicile ou à sécuriser vos biens.
+    </p>
+    <p>
+      Nos serruriers professionnels sont équipés pour gérer tous types de situations, qu'il s'agisse d'une porte claquée, d'une clé cassée dans la serrure ou d'une effraction. <strong>Faites confiance à notre expertise pour un service rapide, fiable et abordable, où que vous soyez dans la région valenciennoise.</strong>
+    </p>
+  </div>
+
+  <div class="depannage-logo">
+    <img src="./assets/img/serrurerie-garantie-2ans.webp" alt="Services de serrurerie garantis 2 ans" />
+    <p>Toutes nos <br>interventions sont <br>garanties 2 ans</p>
+  </div>
+</div>
     
   </section>
   
@@ -238,10 +218,23 @@
     <!-- Cards des services -->
     <div class="services-cards">
       <div class="card">
-        <img src="./assets/img/rempalcement-cylindre-Lille.webp" alt="Remplaçement de cylindres de porte à Valenciennes et ses alentours" />
-        <h3>Remplacement de cylindres</h3>
-        <p>Assurez la sécurité de votre domicile avec un remplacement de cylindre adapté à vos besoins de sécurité.</p>
+    <div class="before-after" data-slider>
+      <img src="./assets/img/rempalcement-cylindre-Lille.webp"
+           alt="Avant remplacement de cylindre à Valenciennes"
+           class="before">
+
+      <div class="after-wrapper">
+        <img src="./assets/img/ouverture-de-porte-urgence-serrurier-Lille.webp"
+             alt="Après remplacement de cylindre à Valenciennes"
+             class="after">
       </div>
+
+      <span class="slider-handle"></span>
+    </div>
+
+    <h3>Remplacement de cylindres</h3>
+    <p>Assurez la sécurité de votre domicile avec un remplacement de cylindre adapté à vos besoins de sécurité.</p>
+  </div>
       <div class="card">
         <img src="./assets/img/reparation-porte-et-serrure-Lille.webp" alt="Remplacement de serrures à Valenciennes et ses alentours" />
         <h3>Réparation de serrures</h3>
@@ -288,8 +281,8 @@
 </div>
 
 <div class="faq-item">
-  <button class="accordion">Couvrez-vous toute la métropole lilloise ?</button>
-  <div class="panel"><p>Oui, nous intervenons sur <strong>Lille et toute la métropole</strong> : Lambersart, Mons-en-baroeul, Villeneuve-d'Ascq, Marcq-en-Barœul, Croix.</p></div>
+  <button class="accordion">Couvrez-vous toute la métropole valenciennoise ?</button>
+  <div class="panel"><p>Oui, nous intervenons sur <strong>Valenciennes et toute la métropole</strong> : Valenciennes, Maubeuge, Saint-Amand, Le Quesnoy, Denain, Somain, Quiévrechain, Cambrai</p></div>
 </div>
 
 <div class="faq-item">
@@ -349,7 +342,7 @@
 
   <section id="contact" class="pre-footer">
     <div class="background-pre-footer">
-      <img src="./assets/img/utilitaire-serrurier-Lille.webp" alt="utilitaire serrurier Valenciennes">
+      <img src="./assets/img/see.png" alt="utilitaire serrurier Valenciennes">
       <div class="text-section">
         <p>Un simple coup de fil et j'arrive chez vous dans la foulée</p>
     </div>
@@ -448,7 +441,7 @@
   </footer>
   
 <!-- Bouton Back to Top -->
-<button id="backToTopBtn" title="Retour en haut"><i class="fa-solid fa-angle-up"></i></button>
+<!-- <button id="backToTopBtn" title="Retour en haut"><i class="fa-solid fa-angle-up"></i></button> -->
 <script src="./scripts/main.js"></script>
 </body>
 </html>
