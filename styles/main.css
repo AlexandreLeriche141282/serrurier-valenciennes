@@ -100,7 +100,7 @@ body #backToTopBtn:hover {
 .header .header-content .floating-image {
   position: absolute;
   bottom: 0;
-  left: 10rem;
+  left: 12rem;
   width: auto;
   max-width: 550px;
   height: 19rem;
