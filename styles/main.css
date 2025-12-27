@@ -514,7 +514,7 @@ body #backToTopBtn:hover {
 .services-section .services-cards .card p {
   font-size: 17px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin: 20px 0;
   color: #254295;
   font-style: normal;
   font-weight: 100;
