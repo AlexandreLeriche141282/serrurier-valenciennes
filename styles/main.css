@@ -76,14 +76,14 @@ body #backToTopBtn:hover {
   margin-top: 10px;
 }
 .header .header-content .logo-container .logo {
-  width: 80px;
+  width: 150px;
   height: auto;
 }
 .header .header-content .logo-container .site-title {
   position: absolute;
-  font-size: clamp(32px, 4vw, 80px);
+  font-size: clamp(27px, 4vw, 80px);
   color: white;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-left: 5px;
   font-family: Lato;
   letter-spacing: 1px;
@@ -113,13 +113,13 @@ body #backToTopBtn:hover {
 }
 .header .header-content .header-subtitle {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1.5rem;
   left: 1rem;
-  font-size: clamp(27px, 3vw, 48px);
+  font-size: clamp(20px, 3vw, 48px);
   color: #ffffff;
   font-weight: 700;
   letter-spacing: 2px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: RedRose;
 }
 @media (min-width: 992px) {

@@ -46,15 +46,15 @@
       margin-top: 10px; // Ajoute un espace en haut pour éloigner du bord supérieur
       
       .logo {
-        width: 80px; // Taille du logo
+        width: 150px; // Taille du logo
         height: auto;
       }
       
       .site-title {
         position:absolute;
-        font-size: clamp(32px, 4vw, 80px); // Min: 18px, Idéal: 4% de la largeur de l'écran, Max: 42px
+        font-size: clamp(27px, 4vw, 80px); // Min: 18px, Idéal: 4% de la largeur de l'écran, Max: 42px
         color: white;
-        margin-top: 150px;
+        margin-top: 200px;
         margin-left: 5px;
         font-family: Lato;
         letter-spacing: 1px;
@@ -87,14 +87,14 @@
     // Styles pour le h2 (sous-titre)
     .header-subtitle {
       position: absolute; // Positionne le h2 indépendamment des autres éléments
-      bottom: 2rem; // Aligne le h2 en bas du header avec un espace de 20px depuis le bord inférieur
+      bottom: 1.5rem; // Aligne le h2 en bas du header avec un espace de 20px depuis le bord inférieur
       left: 1rem; // Positionne le h2 à gauche avec un espace de 20px depuis le bord gauche
-      font-size: clamp(27px, 3vw, 48px); // Min : petite taille, Idéal : responsive, Max : grande taille
+      font-size: clamp(20px, 3vw, 48px); // Min : petite taille, Idéal : responsive, Max : grande taille
       color: #ffffff; // Couleur blanche pour contraster avec l'arrière-plan
       font-weight:700; // Rend le texte plus visible et impactant
       // font-family: Lato;
       letter-spacing: 2px;
-      line-height: 30px;
+      line-height: 20px;
       font-family: RedRose;
       @media (min-width: 992px) { // ou 1024px selon vos besoins
         bottom: 8rem; // Aligne le h2 en bas du header avec un espace de 20px depuis le bord inférieur
