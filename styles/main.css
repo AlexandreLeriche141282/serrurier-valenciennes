@@ -50,12 +50,31 @@ body #backToTopBtn:hover {
 }
 .header {
   position: relative;
-  height: 20rem;
+  height: 23rem;
   display: flex;
   max-width: 1380px;
   margin: 0 auto;
   border-radius: 0 0 40px 40px;
   /* Version ordinateur */
+  /* Barre réseaux sociaux */
+}
+.header .top-social-bar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 10;
+}
+.header .top-social-bar a {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 15px;
+  transition: transform 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  border: none;
+}
+.header .top-social-bar a:hover {
+  transform: scale(1.2);
+  color: #f39c12;
 }
 @media (min-width: 992px) {
   .header {
